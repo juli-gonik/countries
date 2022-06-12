@@ -1,0 +1,53 @@
+:root {
+  /* font-sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  /* font-families */
+  --ff-inter: 'Inter', sans-serif;
+
+  /* font-weights */
+  --lighter: 300;
+  --light: 400;
+  --normal: 500;
+  --medium: 600;
+  --bold: 700;
+  --bolder: 900;
+
+  /* breakpoints */
+  --br-small: 640px;
+  --br-medium: 768px;
+  --br-large: 1024px;
+  --br-extra-large: 1280px;
+  --br-2-extra-large: 1536px;
+
+  /* colors */
+  --primary: 262 100% 50%;
+  --secondary: 221 91% 73%;
+  --dark-blue: 234 52% 39%;
+  --white: 0 0% 100%;
+  --black: 0 0% 0%;
+
+  --neutral-white: 221 89% 96%;
+  --neutral-00: 0 0% 96%;
+  --neutral-05: 210 29% 95%;
+  --neutral-10: 213 30% 93%;
+  --neutral-20: 210 24% 87%;
+  --neutral-30: 213 16% 76%;
+  --neutral-40: 212 19% 73%;
+  --neutral-50: 210 13% 61%;
+  --neutral-60: 209 11% 45%;
+  --neutral-70: 210 17% 25%;
+  --neutral-80: 210 27% 15%;
+  --neutral-black: 307 29% 6%;
+
+  /* Other */
+  --border-radius: 1.5rem;
+  --home-spacing: 1.5rem;
+}

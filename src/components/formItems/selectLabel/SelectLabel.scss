@@ -1,0 +1,24 @@
+@use '../../../assets/styles/variables';
+
+.select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.select {
+  padding: 0.7rem 0;
+  text-indent: 15px;
+  border-radius: 1rem;
+  min-height: 1.5rem;
+  border: 2px solid hsl(var(--neutral-30));
+  background: hsl(var(--white));
+
+  &:focus,
+  &:active,
+  &:hover {
+    outline: hsl(var(--primary));
+    border: 2px solid hsl(var(--primary));
+    cursor: pointer;
+  }
+}

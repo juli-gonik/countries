@@ -1,0 +1,59 @@
+{
+  "extends": [
+    "hardcore",
+    "hardcore/react",
+    "hardcore/react-testing-library",
+    "hardcore/jest",
+    "hardcore/fp",
+    "hardcore/ts",
+    "plugin:prettier/recommended"
+  ],
+
+  "rules": {
+    "import/prefer-default-export": "off",
+    "import/no-unused-modules": "warn",
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "@typescript-eslint/prefer-readonly-parameter-types": "off",
+    "react/function-component-definition": [
+      "off",
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      { "selector": "default", "format": ["camelCase"] },
+      { "selector": ["variable"], "types": ["function"], "format": ["camelCase", "PascalCase"] },
+      { "selector": "function", "format": ["camelCase", "PascalCase"] },
+      { "selector": "typeAlias", "format": ["PascalCase"] }
+    ],
+    "etc/prefer-interface": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "react/no-multi-comp": "off",
+    "no-console": "off",
+    "jest/no-disabled-tests": "off",
+    "react/require-default-props": "off",
+    "react-perf/jsx-no-new-object-as-prop": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "react-perf/jsx-no-jsx-as-prop": "off",
+    "react/forbid-component-props": "off"
+  },
+
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+
+  "env": {
+    "browser": true
+  },
+
+  "overrides": [
+    {
+      "files": ["server/**/*.ts"],
+      "extends": ["hardcore/node"],
+      "env": {
+        "browser": false
+      }
+    }
+  ]
+}

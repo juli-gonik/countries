@@ -1,0 +1,100 @@
+@use '../../assets/styles/variables';
+
+.btn {
+  font-weight: 600;
+  font-size: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+  outline: none;
+  cursor: pointer;
+
+  &-primary {
+    color: var(--white);
+    background-color: hsl(var(--primary));
+    border: 2px solid hsl(var(--primary));
+
+    &:hover {
+      background-color: hsla(var(--primary) / 0.2);
+      border: 2px solid hsla(var(--primary) / 0.2);
+    }
+
+    &:focus {
+      outline: 0.188rem solid hsla(var(--primary) / 0.5);
+    }
+
+    // &:active {
+    //   background-color: variables.$main-color-pressed;
+    //   border: variables.$border-size solid variables.$main-color-pressed;
+    //   box-shadow: 0 0 0.063rem rgb(40 41 61 / 8%),
+    //     0 0.031rem 0.125rem rgb(96 97 112 / 16%);
+    // }
+
+    // &:disabled {
+    //   background-color: variables.$disabled-bg;
+    //   border-color: variables.$disabled-bg;
+    //   color: variables.$disabled-text;
+    //   pointer-events: none;
+    // }
+  }
+
+  // &-secondary {
+  //   color: variables.$main-color;
+  //   border: variables.$border-size solid variables.$main-color;
+  //   background-color: variables.$white;
+
+  //   &:hover {
+  //     color: variables.$main-color-hover;
+  //     border: variables.$border-size solid variables.$main-color-hover;
+  //   }
+
+  //   &:focus {
+  //     background-color: variables.$main-color-focused;
+  //   }
+
+  //   &:active {
+  //     color: variables.$main-color-pressed;
+  //     border: variables.$border-size solid variables.$main-color-pressed;
+  //     box-shadow: 0 0 0.063rem rgb(40 41 61 / 8%),
+  //       0 0.031rem 0.125rem rgb(96 97 112 / 16%);
+
+  //     svg {
+  //       fill: variables.$main-color-pressed;
+  //     }
+  //   }
+
+  //   &:disabled {
+  //     background-color: variables.$disabled-bg;
+  //     border-color: variables.$disabled-text;
+  //     color: variables.$disabled-text;
+  //     pointer-events: none;
+
+  //     svg {
+  //       fill: variables.$disabled-text;
+  //     }
+  //   }
+  // }
+
+  // &-action {
+  //   height: 2.8125rem;
+  //   width: 8.0625rem;
+  //   gap: 3.125rem;
+
+  //   &:hover {
+  //     height: 3.0625rem;
+  //     width: 8.3125rem;
+  //   }
+  // }
+
+  &-add {
+    height: 2.8125rem;
+    width: 12.25rem;
+    gap: 0.9375rem;
+
+    &:hover {
+      height: 3.0625rem;
+      width: 12.5rem;
+    }
+  }
+}
