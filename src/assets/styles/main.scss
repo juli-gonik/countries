@@ -1,11 +1,14 @@
 @use 'variables';
 @use 'resets';
 @use 'utility';
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
 #root {
   width: 100%;
 }
 
 body {
+  font-family: var(--ff-nunito);
+  background: var(--very-light-grey-lm);
   height: 100vh;
 }

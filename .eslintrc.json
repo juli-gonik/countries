@@ -25,7 +25,8 @@
       { "selector": "default", "format": ["camelCase"] },
       { "selector": ["variable"], "types": ["function"], "format": ["camelCase", "PascalCase"] },
       { "selector": "function", "format": ["camelCase", "PascalCase"] },
-      { "selector": "typeAlias", "format": ["PascalCase"] }
+      { "selector": "typeAlias", "format": ["PascalCase"] },
+      { "selector": "typeParameter", "format": ["PascalCase"] }
     ],
     "etc/prefer-interface": "off",
     "@typescript-eslint/consistent-type-definitions": "off",
@@ -36,7 +37,8 @@
     "react-perf/jsx-no-new-object-as-prop": "warn",
     "@typescript-eslint/no-unused-vars": "warn",
     "react-perf/jsx-no-jsx-as-prop": "off",
-    "react/forbid-component-props": "off"
+    "react/forbid-component-props": "off",
+    "etc/no-commented-out-code": "off"
   },
 
   "parserOptions": {
